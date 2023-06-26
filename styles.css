@@ -39,4 +39,19 @@
     scroll-behavior: smooth;
   }
   
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 75px;
+  }
+  
+  .projects img {
+    width: 25%;
+    height: auto;
+    max-width: 200px;
+    min-width: 100px; /* Ajusta este valor según tus necesidades */
+  }
+  
   
