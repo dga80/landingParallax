@@ -3,28 +3,25 @@ body {
     padding: 0;
     padding-bottom: 100px;
   }
-  ::placeholder {
-    color: #ffffff;
-  }
   /* Para WebKit (Chrome, Safari, Opera) */
 ::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /* Para Firefox */
 ::-moz-placeholder {
-  color: #ffffff;
+  color: #ffffff !important;
   opacity: 1;
 }
 
 /* Para Internet Explorer 10-11 */
 :-ms-input-placeholder {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /* Para Microsoft Edge */
 ::-ms-input-placeholder {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 
@@ -51,6 +48,7 @@ body {
     padding: 20px;
     position: relative;
     max-width: 840px;
+    color: white;
   }
   
   /* Left contact page */
@@ -58,6 +56,7 @@ body {
     /*float: left;*/
     max-width: 400px;
     font-weight: 400;
+    color: white;
   }
   
 /* Estilo para los inputs y textarea */
@@ -75,6 +74,7 @@ textarea {
   border: 1px solid #ffffff; /* Agrega un borde para mayor contraste */
   padding: 8px; /* Ajusta el espaciado interno si es necesario */
   text-align: left; /* Alinea la caja a la izquierda */
+  color: white !important;
 }
   .send-button {
     margin-top: 15px;
