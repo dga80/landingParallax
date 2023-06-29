@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="form.css">
     <script src="landing.js"></script>
     <script src="https://kit.fontawesome.com/6ba9020483.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("ntSRBUGfmhMCYMCCv");
+   })();
+    </script>
     <!-- <script>
       window.addEventListener('scroll', function() {
         var header = document.getElementById('header');
@@ -89,13 +97,13 @@
           
                 <div class="form-group">
                   <div class="col-sm-12">
-                    <input type="email" class="form-control" id="email" placeholder="email" name="email" value="" required>
+                    <input type="email" class="form-control" id="email" placeholder="email" name="email" value="email" required>
                   </div>
                 </div>
           
-                <textarea class="form-control color" rows="10" placeholder="message" name="message" required></textarea>
+                <textarea class="form-control color" rows="10" placeholder="message" name="message" id="message" required></textarea>
                 
-                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <button onclick="sendMail()" class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
                   <div class="alt-send-button">
                     <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
                   </div>
@@ -108,15 +116,12 @@
               
                 <div class="direct-contact-container">
           
-                  <ul class="contact-list justify-items-start">
-                    
+                  <ul class="contact-list">
                     <li class="list-item">
                       <span class="contact-text phone"><a href="tel:+34635537471" title="Give me a call">+34 635 537 471</a></span>
                     </li>
-                    
                     <li class="list-item">
                       <span class="contact-text gmail"><a href="mailto:dani.dga@gmail.com" title="Send me an email">dani.dga@gmail.com</a></span></i></li>
-                    
                   </ul>
           
                   <hr>
@@ -124,13 +129,12 @@
                     <li><a href="https://www.linkedin.com/in/daniel-garc%C3%ADa-ariza-5577381a/" target="_blank" rel="noopener" class="contact-icon">
                       <i class="fa-brands fa-linkedin-in"></i></a>                    
                     </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
+                    <li><a href="https://github.com/dga80" target="_blank" class="contact-icon">
                       <i class="fa fa-github" aria-hidden="true"></i></a>
                     </li>
                     <li><a href="https://drive.google.com/file/d/1Av1DH09_0UCWLJY2Tge8DjCG1dEUMaRk/view?usp=drive_link" target="_blank" class="contact-icon">
                       <i class="fa-regular fa-newspaper"></i></a>
-                    </li>
-                    
+                    </li>                    
                   </ul>
                   <hr>          
                 </div>
