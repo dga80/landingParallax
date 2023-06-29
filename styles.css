@@ -48,9 +48,9 @@
   }
   
   .projects img {
-    width: 25%;
+    width: auto;
     height: auto;
-    max-width: 200px;
+    max-width: 230px;
     min-width: 100px; /* Ajusta este valor según tus necesidades */
   }
   
@@ -62,5 +62,8 @@
   .projects img:hover {
     opacity: 1;
     transform: scale(1.05); /* Ajusta este valor según tus necesidades */
+  }
+  .portfolio {
+   transform: scale(1.05)!important;
   }
   
